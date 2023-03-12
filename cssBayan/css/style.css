@@ -1,0 +1,16 @@
+.body {
+    position: center;
+}
+
+.mem {
+    position: center;
+}
+
+.mem-pic {
+    display: none;
+}
+
+.mem-title {
+    display: block; 
+    cursor: pointer;
+}
