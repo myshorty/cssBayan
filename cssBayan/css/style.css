@@ -2,7 +2,6 @@ body {
     background-color: grey;
     font-family: 'Impact', sans-serif;
     font: black;
-    
 }
 
 *{
@@ -14,7 +13,6 @@ body {
     max-width: 500px;
 }
 
-
  .mem input,
  .mem-pic {
     display: none;
@@ -23,25 +21,32 @@ body {
  .mem {
     background: white;
     color:rgb(39, 49, 41);
-    border-radius: 5%;
+    border-radius: 1%;
     margin: 0 1%;
-
  }
 
-
  .mem-title {
-    padding: auto;
+    cursor: pointer;
     display: flex;
+    padding: auto;
     position: relative;
  }
 
-
 .mem-title::after {
-    content: url("icons/plus.svg");
+    content: 'plus.svg';
 }
 
-.ico {
-    background-image: url("icons/plus.svg");
-    background-repeat: no-repeat;
+.mem :checked + .mem-title:after {
+    content: 'minus.svg';
+}
+
+.mem :checked ~ .mem-pic {
+    display: block;
+}
+
+.mem-pic {
+    margin: auto;
+    overflow: hidden;
+    padding: 20% 20%;
 }
 
