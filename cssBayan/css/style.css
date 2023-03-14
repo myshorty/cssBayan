@@ -1,16 +1,46 @@
-.body {
-    position: center;
+body {
+    background-color: grey;
+    font-family: 'Impact', sans-serif;
+    font: black;
 }
 
-.mem {
-    position: center;
+*{
+    box-sizing: border-box;
 }
 
-.mem-pic {
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+
+ .mem input,
+ .mem-pic {
     display: none;
+ }
+
+ .mem {
+    background: white;
+    color:rgb(39, 49, 41);
+    border-radius: 5%;
+    margin: 0 1%;
+
+ }
+
+
+ .mem-title {
+    padding: auto;
+    display: flex;
+    position: relative;
+ }
+
+
+.mem-title::after {
+    content: url("icons/plus.svg");
 }
 
-.mem-title {
-    display: block; 
-    cursor: pointer;
+.ico {
+    background-image: url("icons/plus.svg");
+    background-repeat: no-repeat;
 }
+
